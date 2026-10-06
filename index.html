@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper and Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="main-container hide">
+        <div class="main-container-1">
+            <h3>Select your Weapon</h3>
+        </div>
+        <div class="main-container-2">
+            <div class="img-1 img-div" id="Rock">
+                <img style="margin-top: 10px;" src="./Accest/Rock.png" alt="Rock Img" height="150px" width="170px" />
+                <span id="Rock">Rock</span>
+            </div>
+            <div class="img-2 img-div" id="Paper">
+                <img style="margin-top: 10px;" src="./Accest/Paper.png" alt="Paper Img" height="150px" width="170px" />
+                <span id="Paper">Paper</span>
+            </div>
+            <div class="img-3 img-div" id="Scissors">
+                <img style="margin-left: 10px; margin-top: 10px;" src="./Accest/Scissors.png" alt="Scissors Img"
+                    height="150px" width="150px" />
+                <span id="Scissors">Scissors</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="second-main-container hide">
+        <div class="second-main-container-child-1">
+            <h3>Player</h3>
+            <span>v/s</span>
+            <h3>Computer</h3>
+        </div>
+        <div class="second-main-container-child-2">
+            <div class="second-main-container-child-2-img-1">
+                <img class="hide" id="PlayerRock" height="220px" width="220px" src="./Accest/Rock.png" alt="Rock img" />
+                <img class="hide" id="PlayerPaper" height="220px" width="220px" src="./Accest/Paper.png" alt="Rock img" />
+                <img class="hide" id="PlayerScissors" height="220px" width="220px" src="./Accest/Scissors.png" alt="Rock img" />
+            </div>
+            <div class="second-main-container-child-2-img-2">
+                <img class="hide" id="ComputerRock" height="220px" width="220px" src="./Accest/Rock.png" alt="Rock img" />
+                <img class="hide" id="ComputerPaper" height="220px" width="220px" src="./Accest/Paper.png" alt="Rock img" />
+                <img class="hide" id="ComputerScissors" height="220px" width="220px" src="./Accest/Scissors.png" alt="Rock img" />
+            </div>
+        </div>
+        <div class="second-main-container-child-3 hide2">
+            Congrats, You Won!
+        </div>
+    </div>
+
+    <footer>
+        <div class="reset-button hide2">
+            <i class="fa-solid fa-rotate-left"></i> Play Again
+        </div>
+        <div id="footer-main-div">
+            <h3 style="margin-right: 100px;" id="playerScore">Won: 0</h3>
+            <div style="margin-right: 100px;" class="bar"></div>
+            <h3 style="margin-right: 100px;" id="computerScore">Lost: 0</h3>
+            <div style="margin-right: 100px;" class="bar"></div>
+            <h3 id="drawScore">Draw: 0</h3>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
